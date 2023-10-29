@@ -9,7 +9,7 @@ Window {
     visible: true
     title: qsTr("Writeboard")
     flags: Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
-    color: "#444444"
+    color: "#ffffff"
 
     FontLoader {
         id: icons
@@ -40,7 +40,7 @@ Window {
             id: fillText
             renderType: Text.NativeRendering
             font.pointSize: 12
-            color: "white"
+            color: "black"
             text: ""
             anchors.centerIn: parent
         }
@@ -58,7 +58,7 @@ Window {
             renderType: Text.NativeRendering
             font.family: icons.font.family
             font.pointSize: 24
-            color: "white"
+            color: "black"
             text: String.fromCodePoint(0xe5cd)
             anchors.centerIn: parent
         }
@@ -77,7 +77,7 @@ Window {
             renderType: Text.NativeRendering
             font.family: icons.font.family
             font.pointSize: 24
-            color: "white"
+            color: "black"
             text: String.fromCodePoint(0xe256)
             anchors.centerIn: parent
         }
@@ -96,7 +96,7 @@ Window {
             renderType: Text.NativeRendering
             font.family: icons.font.family
             font.pointSize: 24
-            color: "white"
+            color: "black"
             text: String.fromCodePoint(0xe14a)
             anchors.centerIn: parent
         }
@@ -115,7 +115,7 @@ Window {
             renderType: Text.NativeRendering
             font.family: icons.font.family
             font.pointSize: 24
-            color: "white"
+            color: "black"
             text: String.fromCodePoint(0xe31b)
             anchors.centerIn: parent
         }
@@ -129,7 +129,7 @@ Window {
         anchors.topMargin: 50
         width: parent.width-58
         height: parent.height-58
-        color: "#535353"
+        color: "#ffffff"
 
         Canvas {
             id: canvas
@@ -161,7 +161,7 @@ Window {
                 if (canvas.draw && canvas.pos != canvas.lastPos) {
                     var ctx = getContext("2d")
                     ctx.lineWidth = 5
-                    ctx.strokeStyle = "#b3b3b3"
+                    ctx.strokeStyle = "#000000"
                     ctx.lineCap = "round"
                     ctx.lineJoin = "round"
                     ctx.beginPath()
@@ -180,7 +180,7 @@ Window {
             anchors.topMargin: 110
             width: parent.width-32
             height: 2
-            color: "grey"
+            color: "black"
         }
     }
 }
