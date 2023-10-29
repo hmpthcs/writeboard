@@ -19,6 +19,7 @@ qt_add_qml_module(writeboard
     URI Writeboard
     VERSION 1.0
     QML_FILES Main.qml
+    RESOURCES "fonts/icons.woff2"
 )
 
 set_target_properties(writeboard PROPERTIES
